@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Environment
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 4096
+      textureCompression: 1
+      filterMode: 2
+      generateMipMaps: 1
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 2
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 4096
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 6c10e40728c9a2740b039a1bc4f7f023, type: 3}
+    totalSpriteSurfaceArea: 9229440
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: b8666162c75828548a2f3c9930c4dd04, type: 3}
+  - {fileID: 21300000, guid: b8a0c009f65a4f947850db96e48a1a77, type: 3}
+  - {fileID: 21300000, guid: fa5d68da3745ad84b94d73194f7ea652, type: 3}
+  - {fileID: 21300000, guid: 8e13bb4bfee75d943b63fc4a65113c12, type: 3}
+  - {fileID: 21300000, guid: 5fa6e5edcf8557d4cb3db11863c4c752, type: 3}
+  - {fileID: 21300000, guid: 2278e83e73502ac48ab005d702057597, type: 3}
+  - {fileID: 21300000, guid: 921bef3eac74f4b4aa8fb11b5b0033c0, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - pine_04
+  - pine_02
+  - pine_01
+  - Background
+  - pine_03
+  - Sun
+  - pine_00
+  m_Tag: Environment
+  m_IsVariant: 0
