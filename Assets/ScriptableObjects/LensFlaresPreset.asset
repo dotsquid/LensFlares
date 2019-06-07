@@ -17,13 +17,13 @@ MonoBehaviour:
     color: {r: 1, g: 1, b: 1, a: 0.7254902}
     size: 1.5
     position: 0
-    align: 0
+    align: 1
     startAngle: 0
   - sprite: {fileID: 21300002, guid: 489dd4207328bfb4f8d95476963513a6, type: 3}
     color: {r: 1, g: 1, b: 1, a: 0.7607843}
     size: 1.5
     position: 0.05
-    align: 0
+    align: 1
     startAngle: 0
   - sprite: {fileID: 21300004, guid: 489dd4207328bfb4f8d95476963513a6, type: 3}
     color: {r: 1, g: 1, b: 1, a: 0.5254902}

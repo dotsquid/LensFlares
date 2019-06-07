@@ -64,6 +64,7 @@ public class MapController : MonoBehaviour
         int maxSize = Mathf.Max(_prevWidth, _prevHeight);
         int maxLevel = Mathf.CeilToInt(Mathf.Log(maxSize, 2.0f)) + 1;
 
+        LayoutRebuilder.ForceRebuildLayoutImmediate(_rectTransform);
         float totalHeight = _rectTransform.rect.height;
         float totalSpacing = _layout.spacing.y * (maxLevel - 1);
         float cellSize = Mathf.Min(Mathf.Floor((totalHeight - totalSpacing) / maxLevel), _maxMapSize);

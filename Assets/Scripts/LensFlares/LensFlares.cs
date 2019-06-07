@@ -4,8 +4,6 @@ using UnityEngine;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
-//using SC.Math;
-//using SC.Utilities;
 
 using Random = UnityEngine.Random;
 
@@ -182,9 +180,6 @@ public class LensFlares : MonoBehaviour
         public bool align = true;
         public float startAngle = 0.0f;
     }
-
-    //[Serializable]
-    //public class FlarePresetList : CustomPropertyArray<FlarePreset> { }
 
     [SerializeField]
     private Transform _cameraTransform;
