@@ -24,7 +24,7 @@ public class Tree : MonoBehaviour
         _amplitude = Random.Range(_minAmplitude, _maxAmplitude);
         float speed = Random.Range(_minSpeed, _maxSpeed);
         _frequency = speed / _amplitude;
-        _offset = Mathf.Sin(2.0f * Mathf.PI);
+        _offset = Random.Range(0.0f, 2.0f * Mathf.PI);
     }
 
     public void Swing(float time)
