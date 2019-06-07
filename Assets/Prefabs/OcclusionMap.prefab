@@ -285,5 +285,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be04b5a5d170a4945b4e29b9080b7398, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scale: 1.05
-  _frequency: 8
+  _highlight: {r: 1, g: 0, b: 0, a: 1}
+  _frequency: 4
