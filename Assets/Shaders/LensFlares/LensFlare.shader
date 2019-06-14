@@ -2,10 +2,10 @@ Shader "+SummerCatchers/Special/LensFlare/Flare"
 {
     Properties
     {
-        [PerRendererData] _MainTex ("Sprite Texture", 2D) = "white" {}
-        _OcclusionMap ("Occlusion Map", any) = "white" {}
-        _MinLevel ("Min Level", Float) = 0.0
-        _MaxLevel ("Max Level", Float) = 1.0
+        [PerRendererData]   _MainTex        ("Sprite Texture", 2D) = "white" {}
+                            _OcclusionMap   ("Occlusion Map", any) = "white" {}
+                            _MinLevel       ("Min Level", Float) = 0.0
+                            _MaxLevel       ("Max Level", Float) = 1.0
     }
 
     SubShader

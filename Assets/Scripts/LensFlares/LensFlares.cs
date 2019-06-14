@@ -122,25 +122,13 @@ public class LensFlares : MonoBehaviour
                 Vector2[] spriteUVs = sprite.uv;
                 Vector2[] spriteVertices = sprite.vertices;
                 Vector3[] meshVertices = Array.ConvertAll(spriteVertices, (pos) => (Vector3)pos);
-
-                Vector2 center = Vector2.zero;
-                int vertexCount = spriteVertices.Length;
-                if (vertexCount > 0)
-                {
-                    for (int i = 0; i < vertexCount; ++i)
-                    {
-                        var v = spriteVertices[i];
-                        center += v;
-                    }
-                    center /= vertexCount;
-                }
+                Vector2 spriteCenter = sprite.bounds.center;
 
                 float randomSeed = Random.value;
+                var scale = Vector3.Scale(_ownerTransform.lossyScale, localScale);
                 Vector4[] offsets = Array.ConvertAll(spriteVertices, (pos) =>
                 {
-                    Vector2 lossyScale = _transform.lossyScale;
-                    Vector2 scaledPos = Vector2.Scale(pos, lossyScale);
-                    Vector4 offset = scaledPos - center;
+                    Vector4 offset = Vector2.Scale(pos - spriteCenter, scale);
                     offset.z = _preset.align ? 0.0f : 1.0f;
                     offset.w = randomSeed;
                     return offset;
