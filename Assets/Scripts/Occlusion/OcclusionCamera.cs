@@ -12,6 +12,16 @@ public class OcclusionCamera : MonoBehaviour
     [SerializeField]
     private Renderer _target;
 
+    private void Awake()
+    {
+#if UNITY_EDITOR
+        if (_camera != null)
+#endif
+        {
+            _camera.enabled = false;
+        }
+    }
+
     private void Update()
     {
 #if UNITY_EDITOR
