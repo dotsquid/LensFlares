@@ -1,4 +1,4 @@
-Shader "+SummerCatchers/Special/LensFlare/Flare"
+Shader "+dotsquid/LensFlare/Flare"
 {
     Properties
     {
@@ -55,16 +55,22 @@ Shader "+SummerCatchers/Special/LensFlare/Flare"
                 UNITY_VERTEX_OUTPUT_STEREO
             };
 
+            float GetIntensity()
+            {
+                float mipLevel = log2(max(_OcclusionMap_TexelSize.z, _OcclusionMap_TexelSize.w));
+                float4 occlusionUV = float4(0.5, 0.5, 0.0, mipLevel);
+                fixed occlusion = tex2Dlod(_OcclusionMap, occlusionUV);
+                float intensity = smoothstep(_MinLevel, _MaxLevel, occlusion / _AbsLevel);
+                return intensity;
+            }
+
             v2f vert (appdata_t v)
             {
                 v2f o;
                 UNITY_SETUP_INSTANCE_ID(v);
                 UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);
 
-                float mipLevel = log2(max(_OcclusionMap_TexelSize.z, _OcclusionMap_TexelSize.w));
-                float4 occlusionUV = float4(0.5, 0.5, 0.0, mipLevel);
-                fixed occlusion = tex2Dlod(_OcclusionMap, occlusionUV);
-                float intensity = smoothstep(_MinLevel, _MaxLevel, occlusion / _AbsLevel);
+                float intensity = GetIntensity();
 
                 bool canScale = v.offset.z > 0.0;
                 float randomSeed = v.offset.w;

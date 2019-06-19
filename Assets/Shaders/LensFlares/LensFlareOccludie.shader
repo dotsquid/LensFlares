@@ -1,4 +1,4 @@
-Shader "+SummerCatchers/Special/LensFlare/Occludie"
+Shader "+dotsquid/LensFlare/Occludie"
 {
     Properties
     {

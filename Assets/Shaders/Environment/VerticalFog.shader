@@ -1,4 +1,4 @@
-Shader "+SummerCatchers/VerticalFog"
+Shader "+dotsquid/Sprites/VerticalFog"
 {
     Properties
     {
