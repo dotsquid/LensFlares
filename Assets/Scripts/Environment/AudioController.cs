@@ -24,8 +24,8 @@ public class AudioController : MonoBehaviour
         }
     }
 
-    public void ToggleMute()
+    public void SetState(bool isActive)
     {
-        _audioSource.mute = !_audioSource.mute;
+        _audioSource.mute = !isActive;
     }
 }

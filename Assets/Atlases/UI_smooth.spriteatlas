@@ -31,16 +31,21 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: e2d93b4e11aefd74599c570b698d20a7, type: 3}
-    totalSpriteSurfaceArea: 189263
+    - {fileID: 102900000, guid: f211ec977d396034692b99b241035e26, type: 3}
+    totalSpriteSurfaceArea: 320335
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 50aae711b15c04947a89e9043ad33273, type: 3}
   - {fileID: 21300000, guid: 30c46c41a6da8c84581a77076d6aa1b3, type: 3}
   - {fileID: 21300000, guid: 47eabde564b1e4841b92e448a9ad15a7, type: 3}
+  - {fileID: 21300000, guid: 423b945d79feeb64bb8564550709013f, type: 3}
+  - {fileID: 21300000, guid: 8268b78e4c3ba594a81670babd46115d, type: 3}
   m_PackedSpriteNamesToIndex:
   - Hint_button
   - Hint_arrow
   - Hint_mouse
+  - audio_on
+  - audio_off
   m_Tag: UI_smooth
   m_IsVariant: 0
