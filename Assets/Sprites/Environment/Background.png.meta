@@ -112,7 +112,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    androidETC2FallbackOverride: 0
+    androidETC2FallbackOverride: 2
   - serializedVersion: 2
     buildTarget: Tizen
     maxTextureSize: 2048
